@@ -7,11 +7,11 @@
 
 ### [Fix]: 수정
 
-<br>
+<hr>
 
 ### [Done]: 해당 부분 작업 완료
 
-<br>
+<hr>
 
 ### [Issue Detecting]: 이슈 감지
 
