@@ -15,4 +15,8 @@
 
 ### [Issue Detecting]: 이슈 감지
 
+<hr>
+
+### [Refactoring]: 리팩토링
+
 
