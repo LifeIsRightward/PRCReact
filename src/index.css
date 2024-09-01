@@ -12,7 +12,7 @@ li {
   left: 0;
   top: 0;
   width: 100%;
-  height: 6rem;
+  height: 5rem;
   background-color: #dde0ea;
 }
 
@@ -27,7 +27,7 @@ li {
 }
 
 .contents li {
-  margin-right: 15%;
+  margin-right: 10%;
   margin-top: 15px;
 }
 
@@ -37,42 +37,71 @@ li {
 }
 
 .imgLogo {
-  width: 50%;
+  width: 40%;
   height: auto;
 }
 
 /* header Done */
 
-/* Silde Start */
+/* Slide Start */
 .train {
   display: flex;
   justify-content: center;
-  margin-top: 8rem;
-  /* margin: 0 auto; */
+  margin-top: 5rem;
+  /* 원래 설정한 margin-top 유지 */
+  width: 100%;
+  /* 가로로 화면을 꽉 채우도록 설정 */
+  overflow: hidden;
+  /* 화면 밖의 내용 숨기기 */
+  position: relative;
+  /* 슬라이드 인덱스를 절대 위치로 배치하기 위해 설정 */
 }
 
 .show {
-  width: 1100px;
-  height: 600px;
+  width: 100%;
+  /* 가로로 100% 설정 */
   display: flex;
   overflow: hidden;
   align-items: center;
-  border: 2px green dotted;
-  margin: 0 50px;
-  /*보여줄 영역을 표시하기 위해 적용*/
 }
 
 .compartment {
-  width: 1000px;
-  height: 90%;
+  width: 100%;
+  /* 슬라이드가 화면의 가로를 꽉 채우도록 설정 */
+  height: 750px;
+  /* 높이는 콘텐츠에 따라 자동으로 조정 */
   flex-shrink: 0;
-  /*이 구역안에 생기는 영역들이 공간을 분배하여 가지지 않도록 적용*/
+  /* 슬라이드가 공간을 줄이지 않도록 설정 */
   font-size: 40px;
   text-align: center;
-  margin: 0 50px;
-  /*보여줄 영역을 표시하기 위해 적용*/
-
+  display: flex;
+  /* 콘텐츠를 중앙 정렬하기 위해 flexbox 사용 */
+  justify-content: center;
+  /* 수평 중앙 정렬 */
+  align-items: center;
+  /* 수직 중앙 정렬 */
+  padding: 50px 0;
+  /* 위아래 여백 추가 */
 }
+
+.train .show {
+  overflow: hidden;
+  /* 넘치는 슬라이드를 숨김 */
+  width: 100%;
+  /* 슬라이드가 들어가는 부모 요소의 너비를 100%로 설정 */
+  white-space: nowrap;
+  /* 슬라이드가 한 줄에 나열되도록 설정 */
+}
+
+.train .compartment {
+  display: inline-block;
+  /* 슬라이드 요소들을 수평으로 배치 */
+  width: 100%;
+  /* 각 슬라이드가 부모의 100% 너비를 차지 */
+  box-sizing: border-box;
+  /* 패딩, 테두리를 포함한 박스 모델 설정 */
+}
+
 
 /* 각 슬라이드가 변경되는 것을 시각적으로 확인하기 쉽도록 각 슬라이드별 색상 적용 */
 .compartment:nth-child(1) {
@@ -97,12 +126,16 @@ li {
 
 .slide-index {
   position: absolute;
+  bottom: 20px;
+  /* 화면 하단에서 20px 위에 위치 */
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   gap: 8px;
-  margin-top: 650px;
   cursor: pointer;
+  font-size: larger;
 }
 
 .index-item.active {
-  color: blue;
+  color: white;
 }
