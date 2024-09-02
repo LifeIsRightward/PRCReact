@@ -32,7 +32,7 @@ export default function Slide() {
     useEffect(() => {
         const interval = setInterval(() => {
             setCurSlide((prevState) => prevState + 1);
-        }, 2500);
+        }, 3500);
 
         return () => clearInterval(interval);
     }, []);
