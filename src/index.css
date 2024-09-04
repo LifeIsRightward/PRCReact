@@ -1,5 +1,18 @@
+@import url("https://statics.goorm.io/fonts/GoormSans/v1.0.0/GoormSans.min.css");
+
+
+
 html {
-  background-color: beige;
+  margin: 0;
+  padding: 0;
+  min-width: 1000px !important;
+  min-height: 450px !important;
+
+}
+
+body {
+  min-width: 1000px !important;
+  min-height: 450px !important;
 }
 
 a {
@@ -11,13 +24,18 @@ li {
   list-style-type: none;
 }
 
+.app-container {
+  min-width: 1000px !important;
+  min-height: 450px !important;
+}
+
 .mainheader {
   position: fixed;
   left: 0;
   top: 0;
   width: 100%;
   height: 5rem;
-  background-color: #dde0ea;
+  background-color: #090c0a;
   z-index: 1;
 }
 
@@ -29,11 +47,18 @@ li {
   margin: 0 auto;
   align-items: center;
   justify-content: end;
+
 }
 
 .contents li {
   margin-right: 10%;
   margin-top: 15px;
+}
+
+.contents a {
+  color: white;
+  font-size: large;
+  font: bold;
 }
 
 .logo {
@@ -52,7 +77,7 @@ li {
 .train {
   display: flex;
   justify-content: center;
-  margin-top: 4rem;
+  margin-top: 2rem;
   width: 100%;
   overflow: hidden;
   position: relative;
@@ -74,6 +99,7 @@ li {
   justify-content: center;
   align-items: center;
   padding: 50px 0;
+  background-color: rgba(0, 0, 0, 0.77);
 }
 
 button.prev-slide,
@@ -130,31 +156,53 @@ button.next-slide {
   display: flex;
   width: 100%;
   height: 700px;
-  background-color: aqua;
+  padding-bottom: 25px;
   justify-content: space-between;
   align-items: center;
+  background-color: rgba(15, 7, 7, 0.5);
 }
 
 .introduce-img {
   width: 40%;
   height: 650px;
-  background-color: bisque;
+  /* background-color: red; */
   margin-left: 3%;
 }
 
+.imgmy {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+
+}
+
+.introduce-img p {
+  margin-left: 25%;
+  font-family: "Goorm Sans", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
 .introduce-text {
-  width: 40%;
-  height: 650px;
-  background-color: black;
-  margin-right: 7%;
+  width: 30%;
+  height: max-content;
+  /* background-color: white; */
+  margin-right: 15%;
+  border: 4px solid rgba(21, 14, 29, 0.596);
+  padding: 20px;
+  color: rgba(0, 0, 0, 1.0);
+  font-family: "Goorm Sans", sans-serif;
+  font-weight: 100;
+  font-style: normal;
 
 }
 
 /* Product */
 .product-container {
   width: 100%;
-  height: 700px;
-  background-color: blueviolet;
+  height: max-content;
+  background-color: rgba(0, 0, 0, 0.77);
 
 }
 
@@ -165,7 +213,7 @@ button.next-slide {
   flex-wrap: wrap;
   justify-content: start;
   align-items: center;
-  background-color: brown;
+  /* background-color: brown; */
 }
 
 .product-card {
