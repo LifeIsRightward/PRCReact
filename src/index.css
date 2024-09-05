@@ -155,7 +155,7 @@ button.next-slide {
 .introduce-container {
   display: flex;
   width: 100%;
-  height: 700px;
+  height: 800px;
   padding-bottom: 25px;
   justify-content: space-between;
   align-items: center;
@@ -199,14 +199,14 @@ button.next-slide {
 }
 
 /* Product */
-.product-container {
+.project-container {
   width: 100%;
   height: max-content;
   background-color: rgba(0, 0, 0, 0.77);
 
 }
 
-.product-cardview {
+.project-cardview {
   width: 100%;
   height: max-content;
   display: flex;
@@ -216,45 +216,22 @@ button.next-slide {
   /* background-color: brown; */
 }
 
-.product-card {
-  width: 300px;
-  /* 한 줄에 4개씩 배치되도록 너비를 22%로 설정 */
-  max-width: 300px;
-  /* 카드의 최대 너비를 300px로 제한 */
-  height: 250px;
-  margin-bottom: 20px;
-  margin-left: 3%;
-  margin-top: 30px;
-  /* 카드 간 간격을 유지 */
-  background-color: blue;
-  border: 2px solid black;
+#card-container {
+  width: 400px;
+  height: 500px;
+  margin-left: 100px;
+  margin-top: 50px;
 }
 
-/* 추가된 미디어 쿼리: 화면 크기가 작을 때를 처리 */
-@media (max-width: 1200px) {
-  .product-card {
-    width: 22%;
-    margin-left: 2%;
-  }
+#card-container img {
+  max-width: 350px;
+  max-height: 300px;
 }
 
-@media (max-width: 992px) {
-  .product-card {
-    width: 30%;
-    margin-left: 3%;
-  }
-}
-
-@media (max-width: 768px) {
-  .product-card {
-    width: 45%;
-    margin-left: 5%;
-  }
-}
-
-@media (max-width: 576px) {
-  .product-card {
-    width: 95%;
-    margin-left: 0;
-  }
+#card-containder h4,
+span {
+  font-family: "Goorm Sans", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  color: wheat;
 }
