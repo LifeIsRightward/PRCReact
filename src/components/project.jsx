@@ -22,6 +22,8 @@ export default function Product() {
                                 img={prjimg[index]}
                                 prjname={item.prjname}
                                 description={item.description}
+                                github={item.github}
+                                youtube={item.youtube}
                             />
                         )
                     })
